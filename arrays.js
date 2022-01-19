@@ -50,3 +50,45 @@ for (let index = 0; index < idades.length; index++) {
 // console.log('Somente maiores de idade anonimo: ' + maiorDeIdade)
 // console.log('Somente maiores de idade arrow: ' + maiorIdadeArrowFunction)
 // console.log('Somente maiores de idade loop for: ' + novosMaioresDeIdade)
+
+const alunos = [
+  {
+    nome: 'Leo',
+    idade: 26,
+    altura: 1.71
+  },
+  {
+    nome: 'Gabriel',
+    idade: 25,
+    altura: 1.82
+  },
+  {
+    nome: 'Thaissa',
+    idade: 22,
+    altura: 1.71
+  },
+  {
+    nome: 'Betinha',
+    idade: 263,
+    altura: 1.56
+  },
+  {
+    nome: 'lucas',
+    idade: 20,
+    altura: 1.56
+  }
+];
+
+alunos.sort((objetoA, objetoB) => {
+  if (objetoA.nome.toUpperCase() > objetoB.nome.toUpperCase()) {
+    return 1;
+  }
+
+  if (objetoA.nome.toUpperCase() < objetoB.nome.toUpperCase()) {
+    return -1;
+  }
+
+  return 0;
+})
+
+console.log(alunos)
