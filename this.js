@@ -3,18 +3,18 @@ const biblioteca = {
   dono: 'Leonardo',
   quantidadeLivros: 30,
   quantidadeLidos: 8,
-  localização: 'Guarujá',
-  mostraLocalizacao: () => {
-    console.log('A biblioteca de Leonardo está no Guarujá');
+  localizacao: 'Guarujá',
+  mostraLocalizacao: function() {
+    console.log(`A biblioteca de ${this.dono} está no ${this.localizacao}`);
   },
-  mostraLivrosLidos: () => {
-    console.log('Leonardo já leu 8 livros');
+  mostraLivrosLidos: function() {
+    console.log(`${this.dono} já leu ${this.quantidadeLidos} livros`);
   },
-  mostraQuantidadeLivros: () => {
-    console.log('Leonardo possui 30 livros');
+  mostraQuantidadeLivros: function() {
+    console.log(`${this.dono} possui ${this.quantidadeLivros} livros`);
   },
-  mostraProprietario: () => {
-    console.log('Leonardo possui a biblioteca');
+  mostraProprietario: function() {
+    console.log(`${this.dono} possui a biblioteca`);
   }
 }
 
@@ -23,4 +23,18 @@ biblioteca.mostraLivrosLidos();
 biblioteca.mostraLocalizacao();
 biblioteca.mostraQuantidadeLivros();
 biblioteca.mostraProprietario();
+// console.log('Valor do dono: ' + biblioteca.dono);
 
+console.log('-------------------------------------------');
+
+// Altera dados da biblioteca
+biblioteca.dono = 'Ana';
+biblioteca.localizacao = 'Rússia';
+biblioteca.quantidadeLidos = 50;
+biblioteca.quantidadeLivros = 3;
+// console.log('Novo dono: ' + biblioteca.dono);
+
+biblioteca.mostraLivrosLidos();
+biblioteca.mostraLocalizacao();
+biblioteca.mostraQuantidadeLivros();
+biblioteca.mostraProprietario();
