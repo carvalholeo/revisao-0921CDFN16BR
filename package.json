@@ -1,0 +1,20 @@
+{
+  "name": "revisao-0921cdfn16br",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carvalholeo/revisao-0921CDFN16BR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carvalholeo/revisao-0921CDFN16BR/issues"
+  },
+  "homepage": "https://github.com/carvalholeo/revisao-0921CDFN16BR#readme"
+}
